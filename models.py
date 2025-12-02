@@ -11,7 +11,7 @@ class Tool(BaseModel):
     parameters: List[ToolParameter]
 
 class ModelContextRequest(BaseModel):
-    vern: str
+    verb: str
     tool_name: Optional[str] = None
     arguments: Optional[Dict[str, Any]] = None
 

@@ -1,4 +1,6 @@
-from fastapi import HTTPException
+from fastapi import FastAPI, HTTPException
+app = FastAPI()
 
-async def mcp_request_handler():
+@app.post("/mcp")
+async def mcp_request_handler(request: Request):
     pass
